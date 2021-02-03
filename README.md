@@ -11,3 +11,7 @@ nacos-demo
   - db.password=123456
 * step4：启动 nacos-win\nacos\bin 目录下 .\startup.cmd
 * step5：访问 http://localhost:8848/nacos ，账号和密码均为nacos
+## 服务注册中心演示
+* step1：运行服务提供方 PaymentMain9001.java
+* step2：运行服务消费方 OrderNacosMain83.java
+* step3：浏览器访问消费方接口 http://localhost:8081/consumer/payment/nacos/1 实现调用服务提供方接口
