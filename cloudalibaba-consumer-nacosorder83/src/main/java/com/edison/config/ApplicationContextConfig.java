@@ -10,10 +10,10 @@ import org.springframework.web.client.RestTemplate;
  * @description
  * @create 2021-02-03 16:17
  **/
-@Configuration
+@Configuration //用于定义配置类
 public class ApplicationContextConfig {
-    @Bean
-    @LoadBalanced
+    @Bean //产生一个Bean对象,Spring只会调用一次
+    @LoadBalanced //增加客户端负载均衡功能
     public RestTemplate getRestTemplate(){
         return new RestTemplate();
     }

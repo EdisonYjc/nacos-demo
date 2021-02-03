@@ -28,6 +28,9 @@ public class OrderNacosController {
      */
     @GetMapping("/consumer/payment/nacos/{id}")
     public String paymentInfo(@PathVariable Long id){
+        // 原始方式通过 ip:port 进行访问
+        // restTemplate.getForObject("http://localhost:8081/msg"+name,String.class);
+        //  通过服务提供方的 spring.application.name 名称发现
         return
                 restTemplate.getForObject(serverURl+"/payment/nacos/"+id,String.class);
     }
