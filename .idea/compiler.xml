@@ -8,13 +8,19 @@
         <outputRelativeToContentRoot value="true" />
         <module name="cloudalibaba-provider-payment9001" />
         <module name="cloudalibaba-consumer-nacosorder83" />
+        <module name="cloudalibaba-config-nacos-client3377" />
         <module name="cloudalibaba-provider-payment9002" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloudalibaba-consumer-nacosorder84" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cloudalibaba-config-nacos-client3377" options="-parameters" />
       <module name="cloudalibaba-consumer-nacosorder83" options="-parameters" />
+      <module name="cloudalibaba-consumer-nacosorder84" options="-parameters" />
       <module name="cloudalibaba-provider-payment9001" options="-parameters" />
       <module name="cloudalibaba-provider-payment9002" options="-parameters" />
     </option>

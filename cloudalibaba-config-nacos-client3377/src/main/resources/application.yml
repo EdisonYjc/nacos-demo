@@ -1,0 +1,6 @@
+spring:
+  profiles:
+#    active: dev # dataid区分加载 表示开发环境
+#    active: test # dataid区分加载 表示测试环境
+#    active: info # group区分加载
+    active: dev # namespace区分加载 表示开发环境

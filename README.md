@@ -25,3 +25,17 @@ nacos 注册中⼼，服务端⼝:8080 id1
 nacos 注册中⼼，服务端⼝:8081 id1
 ... 
 ```
+## 服务配置中心演示
+访问：http://localhost:3377/config/info
+controller配置的config.info值可以取到页面配置的对应值
+**⾃带动态刷新**：配置列表内容修改后，再次访问得到的便是修改后的值
+### 三种方案加载配置
+1. DataID方案
+    - nacos-config-client-dev.yaml
+    -  nacos-config-client-test.yaml
+2. Group方案
+    - DEV_GROUP
+    - TEST_GROUP
+3. namespace方案
+    - 命名空间增加test
+    - 命名空间增加dev
